@@ -76,9 +76,13 @@ Ce projet utilise une technologie:
 Le projet est structuré en plusieurs packages, chacun gérant des fonctionnalités spécifiques :
 
 **deplacements** : Contient les classes pour les formes géométriques (Rectangle, Cercle, Triangle).
+
 **utils** : Regroupe les outils tels que le dessin libre et la gomme.
+
 **Game** : Contient les classes pour la gestion de l'interface utilisateur, y compris la zone de dessin principale.
+
 **Main** : Main
+
 Ainsi que de plusieurs class.
 
 ## Licence
