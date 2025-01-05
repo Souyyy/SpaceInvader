@@ -4,11 +4,12 @@
 ## Fonctionnalités
 Voici les principales fonctionnalités du SpaceInvader :
 
--
--
--
--
--
+- Lancer une partie.
+- Jouer une partie.
+- Deplacement de plus en plus rapide des monstres en fonction du nombres restant de monstre vivant.
+- Recreer des monstres quand ils sont mort.
+- Déplacement en X du joueur.
+- Compte le score une fois la partie perdu.
 
 ## Lancement de l'application
 
@@ -39,12 +40,12 @@ Vous pouvez vérifier leurs versions installées avec les commandes suivantes de
    
 Ouvrez votre terminal et exécutez la commande suivante pour cloner le dépôt :
 
-```git clone https://github.com/Souyyy/Paint/```
+```git clone https://github.com/Souyyy/SpaceInvader/```
 
 ### 2. Accéder au répertoire
 Naviguez dans le dossier du projet :
 
-```cd Paint```
+```cd SpaceInvader```
 
 ### 4. Lancer l'application depuis votre terminal
 
@@ -75,15 +76,18 @@ Ce projet utilise une technologie:
 
 Le projet est structuré en plusieurs packages, chacun gérant des fonctionnalités spécifiques :
 
-**deplacements** : Contient les classes pour les formes géométriques (Rectangle, Cercle, Triangle).
+**deplacements** : Contient les classes pour les déplacements, DeplacementJoueur, DeplacementMonstre et DeplacementProjectile.
 
-**utils** : Regroupe les outils tels que le dessin libre et la gomme.
+**utils** : Regroupe les utilitaire tels que le Joueur, Monstre, Score et Projectile.
 
-**Game** : Contient les classes pour la gestion de l'interface utilisateur, y compris la zone de dessin principale.
+**Game** : Est la classe du Jeu, celle ci défini les règles et permet le bon fonctionnement de celui ci.
 
-**Main** : Main
+**Main** : Main, quant à lui permet de lancer la fêntre qui va ensuite rediriger sur le jeu 
 
-Ainsi que de plusieurs class.
+## Bug & Amélioration
+- J'ai eu un bug pour l'ajout du score, j'aurais pu ajouter le score directement dans la fenetre de jeu
+- J'ai eu un peu de mal à implémenter la vitesse de deplacement en fonction du nombre de monstre restant (d'ailleurs bug un peu)
+- Je peux faire en sorte d'améliorer le rendu 3D du jeu, il est très simpliste
 
 ## Licence
 Ce programme est sous licence MIT.
